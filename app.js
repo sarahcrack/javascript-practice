@@ -150,14 +150,18 @@
 
 // window.addEventListener("load", sayHello, false);
 
-function sayHello() {
-  window.addEventListener("onsubmit", sayHello);
+function sayHello(event) {
+  event.preventDefault();
 
   var childName = document.querySelector("#name-input").value;
 
-  document
-    .getElementById("welcome")
-    .appendChild(document.createTextNode(` Hello ${childName}!`));
+  if (childName !== "") {
+    var welcomeText = `Hello ${childName}!`;
+  } else {
+    var welcomeText = `Hello you!`;
+  }
+
+  document.getElementById("welcome").innerText = welcomeText;
 }
 
-window.addEventListener("onsubmit", sayHello, false);
+document.addEventListener("submit", sayHello);
