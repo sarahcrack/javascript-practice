@@ -45,36 +45,119 @@
 //   return string.reverse();
 // }
 
-function sum(number1, number2) {
-  return number1 + number2;
+// function sum(number1, number2) {
+//   return number1 + number2;
+// }
+
+// // console.log(sum(5, 2));
+
+// // function power(number1, number2) {
+// //   return number1 ** number2;
+// // }
+
+// // console.log(power(2, 3));
+
+// // function powerPrompt() {
+// //   let number1 = prompt("What is your first number?");
+// //   let number2 = prompt("What is your second number?");
+// //   return power(number1, number2);
+// // }
+
+// // var yourPower = powerPrompt();
+
+// // console.log(yourPower);
+
+// var travelObject = {
+//   favouriteCity: "Bangkok",
+//   favouriteFood: "Italian",
+//   favouriteAirline: "Emirates",
+//   sayHello: function helloWorld() {
+//     console.log(sayHello());
+//   },
+// };
+
+// console.log(travelObject.favouriteAirline);
+// sayHello();
+
+// var travelObject = {
+//   favouriteCity: "Bangkok",
+//   favouriteFood: "Italian",
+//   favouriteAirline: "Emirates",
+//   sayHello: function helloWorld() {
+//     console.log(sayHello());
+//   },
+// };
+
+// console.log(travelObject.favouriteAirline);
+
+// function promptForUserName() {
+//   var name = prompt("What is your name?");
+//   alert(`Hello ${name}`);
+// }
+
+// function addChildName(response) {
+//   var childName = prompt("What is your name?");
+//   document.querySelector("#childUserName").innerHTML = response.childName;
+// }
+
+// document.addEventListener(
+//   "DOMContentLoaded",
+//   function changeToChildName(response) {
+//     var childName = prompt("What is your name?");
+//     var newWelcome = document.createElement("h1");
+//     newWelcome.innerText = `Hello ${childName}`;
+//     changeToChildName(response);
+//   }
+// );
+
+// document
+//   .querySelector("#welcome-button")
+//   .addEventListener("onclick", changeToChildName);
+
+// function changeToChildName() {
+//   var childName = prompt("What is your name?");
+//   alert(childName);
+// }
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var welcomeMessage = document.createElement("h1");
+//   welcomeMessage.innerText = "Hello!";
+
+//   welcomeMessage.addEventListener("click", function (event) {
+//     var childName = prompt("What is your name?");
+//     newWelcomeMessage = `Hello ${childName}!`;
+//   });
+
+//   document.body.appendChild(welcomeMessage);
+// });
+
+// window.onload = function sayHello() {
+//   var childName = prompt("Hello and welcome! What is your name?", "Name");
+//   document.getElementById("#welcome").innerHTML = `Hello ${childName}`;
+
+//   document.body.appendChild(childName);
+// };
+
+// function sayHello() {
+//   window.addEventListener("load", sayHello);
+
+//   var childName = prompt("Hello and Welcome! What's your name?", "Name");
+
+//   document
+//     .getElementById("welcome")
+//     .appendChild(document.createTextNode(` Hello ${childName}!`));
+// }
+
+// window.addEventListener("load", sayHello, false);
+
+function sayHello() {
+  window.addEventListener("onsubmit", sayHello);
+
+  var childName = document.querySelector("#name-input").value;
+
+  document
+    .getElementById("welcome")
+    .appendChild(document.createTextNode(` Hello ${childName}!`));
 }
 
-// console.log(sum(5, 2));
-
-// function power(number1, number2) {
-//   return number1 ** number2;
-// }
-
-// console.log(power(2, 3));
-
-// function powerPrompt() {
-//   let number1 = prompt("What is your first number?");
-//   let number2 = prompt("What is your second number?");
-//   return power(number1, number2);
-// }
-
-// var yourPower = powerPrompt();
-
-// console.log(yourPower);
-
-var travelObject = {
-  favouriteCity: "Bangkok",
-  favouriteFood: "Italian",
-  favouriteAirline: "Emirates",
-  sayHello: function helloWorld() {
-    console.log(sayHello());
-  },
-};
-
-console.log(travelObject.favouriteAirline);
-sayHello();
+window.addEventListener("onsubmit", sayHello, false);
