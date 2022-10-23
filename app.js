@@ -19,7 +19,7 @@ function pickColour(event) {
 
   var colourPickPurple = document.querySelector("purple-btn");
   var colourPickGreen = document.querySelector("green-btn");
-  var colourPickOrgange = document.querySelector("organge-btn");
+  var colourPickOrange = document.querySelector("orange-btn");
 
   if ((colourPickPurple = true)) {
     alert(
@@ -29,7 +29,7 @@ function pickColour(event) {
     alert(
       "Good try but not quite there yet! Please check the colour wheel and pick again..."
     );
-  } else if ((colourPickOrgange = true)) {
+  } else if ((colourPickOrange = true)) {
     window.location.href = "https://www.google.co.uk/";
   }
 }
