@@ -1,3 +1,7 @@
+.container {
+  max-width: 800px;
+}
+
 #welcome {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: violet;
